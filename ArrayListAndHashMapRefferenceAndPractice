@@ -42,6 +42,7 @@ public class ArrayList {
     //If you want an array of all the keys in the HashMap, you can use the keySet() method
     String[] keys = map.keySet().toArray(newString[map.size()]);
     
-    
+    // cannot store basic primitive data types inside of ArrayLists, HashMaps, or any Java collectoin for that matter.
+    //They only store objects.
   }
 }
