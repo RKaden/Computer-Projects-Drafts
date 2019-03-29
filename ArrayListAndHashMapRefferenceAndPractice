@@ -1,0 +1,47 @@
+package ArrayList;
+
+//can it Ctrl+Shift+O to automatically import everything into eclipse
+
+//import ArrayList
+import java.util.ArrayList;
+
+public class ArrayList {
+
+  public static void main(String[] args) {
+  
+    ArrayList<Intege> array = new Array List<Integer>();
+    
+    //add value in the array list
+    array.add(1);
+    
+    //remove value in the array list
+    array.remove(0);
+    
+    //access a value in the array list
+    array.get(0);
+  }
+}
+
+package Hashmap;
+
+//import HashMap
+import java.util.HashMap //name of object in place of Hashmap
+
+public class ArrayList {
+
+  public static void main(String[] args) {
+  
+    HashMap<String, String> map = new HashMap<String, String> ();
+    
+    //inserting a new key/value pair for String, String in HashMap
+    map.put("Me", "Password");
+    
+    //deleting key/value pair for String, String in HashMap
+    map.remove("Me");
+    
+    //If you want an array of all the keys in the HashMap, you can use the keySet() method
+    String[] keys = map.keySet().toArray(newString[map.size()]);
+    
+    
+  }
+}
