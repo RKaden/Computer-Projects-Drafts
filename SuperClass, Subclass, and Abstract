@@ -1,0 +1,33 @@
+//superclass
+
+public class Animal{
+  
+  //subclass is within superclass
+  //public class Dog extends Animal{
+  // you can only ever extends one class
+  
+    //class Animal body
+    public boolean isAPet = true;
+    public String owner = "Fred";
+  
+    public void sleep() {
+    System.out.printline("Sleeping");
+    }
+    public void eat() {
+    System.out.println("Eating);
+    
+    public static void main(String[] args) {
+      Dog d = new Dog();
+      d.sleep();
+      
+    public class Dog extends Animal{
+      public void bark() {
+      System.out.println("Woof!");
+      }
+    }
+      
+    }
+    
+    }
+  }
+}
