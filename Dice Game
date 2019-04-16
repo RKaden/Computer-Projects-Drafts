@@ -11,6 +11,7 @@ public class MainHub {
   
   public static void main(String[] args) {
     
+    startingScreen();
     
   }
 }
@@ -41,12 +42,7 @@ public class Graphics {
       
       //creating the exit (x) button
       frame.setDefaultcloseOperation(JFrame.EXIT_ON_CLOSE);
-  }
-}
-
-public class Game {
-  
-  public void NewGame() {
-    
+      
+      System.out.println("Press A to Start");
   }
 }
