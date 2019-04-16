@@ -1,26 +1,20 @@
-public abstract class Animal {
+public abstract class CardGame {
   
   public static void main(String[] args) {
-    Animal dog = new Dog();
-    Animal cat = new Cat();
-    ArrayList<Animal> animals = new ArrayList<Animal>()
-    animals.add(dog);
-    animals.add(cat);
-  }
-}
-public class Dog extends Animal {
   
-  public void makeSound() {
-    System.out.println("Woof!");
-  }
-  
-  public void make sound(boolean injured) {
-    if(injured) {
-      System.out.println("Whimper");
-    }
   }
 }
 
-public class Cat extends Animal {
+public class Magic extends CardGame {
+  
+  public void bestCard() {
+    System.out.println("NicolBolas");
+  }
+}
 
+public class Yugi-Oh extends CardGames {
+  
+  public void bestCard() {
+    system.out.println("Blue eyes White Dragon!");
+  }
 }
