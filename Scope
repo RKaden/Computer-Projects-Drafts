@@ -1,0 +1,13 @@
+public class User {
+  
+  //define variable before any methods or main program this is convention
+  private String username;
+  
+  public static void main(String[] args) {
+    int x = 5;
+  }
+  
+  public void setName(String username) {
+    this. username = username; // or vice versa
+  }
+}
