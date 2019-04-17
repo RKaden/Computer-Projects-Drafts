@@ -42,7 +42,5 @@ public class Graphics {
       
       //creating the exit (x) button
       frame.setDefaultcloseOperation(JFrame.EXIT_ON_CLOSE);
-      
-      System.out.println("Press A to Start");
   }
 }
