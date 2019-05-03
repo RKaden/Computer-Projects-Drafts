@@ -1,0 +1,42 @@
+package graphics;
+
+import java.awt.Dimension;
+import java.awt.Image;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+
+public class FrameClass {
+  
+    public void startingScreen(){
+	   
+		    //setting up JFrame (visibility and size)
+		    JFrame frame = new JFrame();
+		    frame.setSize(800, 600);
+   			frame.setVisible(true);
+
+   			//more stuff
+   			frame.setTitle("Title");
+   
+   			//Loading the image
+   			ImageIcon logoicon = new ImageIcon("star.png");
+   			Image logo = logoicon.getImage();
+   			frame.setIconImage(logo);
+   
+   			frame.setResizable(false);
+   
+   			//centering the window
+   			Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+   			int w = frame.getSize().width;
+   			int h = frame.getSize().height;
+   			int x = (dim.width-w)/2;
+   			int y = (dim.width-h)/2;
+   
+   			//Move the window
+   			frame.setLocation(x, y);
+   
+   			//make the x exit the code
+   			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
