@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class Program {
+
+	public static void main(String[] args) {
+		
+		GameBoard board = new GameBoard(3,3);
+		Scanner sc = new Scanner(System.in);
+		
+		int turn = 2;
+		if(turn % 2 == 0) {
+			System.out.println("X's turn");
+		}
+		else {
+			System.out.println("O's turn");
+		}
+	}
+}
+
+class GameBoard{
+	int [] [] grid;
+	
+	public GameBoard(int height, int width) {
+		grid = new int[height][width];
+		for(int r=0; r < grid.length; r++) {
+			for(int c=0; c < grid[0].length; c++) {
+				grid[r][c] = 0;
+			}
+		}
+	}
+public boolean choose(int r, int c) {
+	int turn = 2;
+	if(grid[r][c] == 0 && turn % 2 == 0) {
+		grid[r][c] = 9;
+		return true;
+	}
+	else {
+		grid[r][c] = 2;
+		return false;
+	}
+}
+public void showBoard() {
+	for(int r=0; r < grid.length; r++) {
+		for(int c=0; c < grid[0].length; c++) {
+			if(grid[r][c] == 0 || grid[r][c] == 1)
+				System.out.print(".");
+			if(grid[r][c] == 2)
+				System.out.print("O");
+			else if(grid[r][c] == 9)
+				System.out.print("X");
+			System.out.print(" ");
+		}
+		System.out.println();
+		}
+	}
+}
